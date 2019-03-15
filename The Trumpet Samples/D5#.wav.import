@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/D5#.wav-51b7bc370997b7f6953f7eb5c6c022af.sample"
+
+[deps]
+
+source_file="res://The Trumpet Samples/D5#.wav"
+dest_files=[ "res://.import/D5#.wav-51b7bc370997b7f6953f7eb5c6c022af.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

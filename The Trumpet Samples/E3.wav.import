@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/E3.wav-a0cd055b78151edc068fd357d99c2b38.sample"
+
+[deps]
+
+source_file="res://The Trumpet Samples/E3.wav"
+dest_files=[ "res://.import/E3.wav-a0cd055b78151edc068fd357d99c2b38.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

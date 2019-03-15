@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/D6.wav-7558d8720f7c0571caf12f5745fda483.sample"
+
+[deps]
+
+source_file="res://The Trumpet Samples/D6.wav"
+dest_files=[ "res://.import/D6.wav-7558d8720f7c0571caf12f5745fda483.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

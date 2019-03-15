@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/G4#.wav-870e2dd0138bc8e813077f35a0b26bac.sample"
+
+[deps]
+
+source_file="res://The Trumpet Samples/G4#.wav"
+dest_files=[ "res://.import/G4#.wav-870e2dd0138bc8e813077f35a0b26bac.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
