@@ -19,4 +19,6 @@ texture = ExtResource( 2 )
 position = Vector2( -0.25235, 2.27106 )
 shape = SubResource( 1 )
 
+[node name="Toot" type="AudioStreamPlayer" parent="."]
+
 [connection signal="input_event" from="Area2D" to="." method="_on_Area2D_input_event"]
