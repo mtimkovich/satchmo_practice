@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/A3#.wav-26d779721b50546b1990c1ab854323cb.sample"
+
+[deps]
+
+source_file="res://trumpet/A3#.wav"
+dest_files=[ "res://.import/A3#.wav-26d779721b50546b1990c1ab854323cb.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

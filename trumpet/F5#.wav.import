@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/F5#.wav-9654fde0a1ba12679b3ac57067d722fd.sample"
+
+[deps]
+
+source_file="res://trumpet/F5#.wav"
+dest_files=[ "res://.import/F5#.wav-9654fde0a1ba12679b3ac57067d722fd.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

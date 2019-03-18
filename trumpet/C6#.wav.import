@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/C6#.wav-55c039d03426c50ef9d3da4d5d500327.sample"
+
+[deps]
+
+source_file="res://trumpet/C6#.wav"
+dest_files=[ "res://.import/C6#.wav-55c039d03426c50ef9d3da4d5d500327.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
