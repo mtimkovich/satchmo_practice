@@ -62,10 +62,10 @@ func _get_fingering():
 	return current
 	
 func _process(delta):
-	if Input.is_mouse_button_pressed(BUTTON_LEFT):
+	if Input.is_action_just_pressed('leftclick'):
 		current = _get_fingering()
 		if current != previous and _is_pressed():
 			play()
 		previous = current
-	else:
+	elif Input.is_action_just_released('leftclick'):
 		previous = [0, 0]

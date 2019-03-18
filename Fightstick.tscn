@@ -42,7 +42,7 @@ position = Vector2( 925.197, 293.639 )
 [node name="Toot" type="AudioStreamPlayer" parent="."]
 
 [node name="Timer" type="Timer" parent="Toot"]
-wait_time = 0.25
+wait_time = 0.2
 one_shot = true
 
 [connection signal="timeout" from="Toot/Timer" to="." method="_on_Timer_timeout"]
