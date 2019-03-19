@@ -18,6 +18,15 @@ var bottom_notes = {
 	4: 'G',
 	6: 'G#'
 }
+
+func _ready():
+	$Help.visible = false
+	if OS.has_touchscreen_ui_hint():
+		$HelpText.visible = false
+	
+func _input(event):
+	if event is InputEventKey and event.scancode == KEY_QUESTION:
+		$Help.visible = event.is_pressed()
 	
 func play():
 	var pitch = 4
