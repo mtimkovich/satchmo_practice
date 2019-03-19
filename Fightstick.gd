@@ -25,7 +25,7 @@ func _ready():
 		$HelpText.visible = false
 	
 func _input(event):
-	if event is InputEventKey and event.scancode == KEY_QUESTION:
+	if event is InputEventKey and event.scancode == KEY_H:
 		$Help.visible = event.is_pressed()
 	
 func play():

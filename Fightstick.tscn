@@ -78,9 +78,11 @@ margin_right = 1008.89
 margin_bottom = 572.372
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Hold \"?\" for help"
+text = "Hold \"H\" for help"
 
 [node name="Help" parent="." instance=ExtResource( 5 )]
+editor/display_folded = true
+visible = false
 margin_left = 12.3193
 margin_top = 8.95784
 margin_right = 12.3193

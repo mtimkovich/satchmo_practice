@@ -15,6 +15,7 @@ On PC:
 | **P** | U | I | O |
 | **K** | J | K | L |
 
-`Enter` starts a timer to let you know how much time you have to solo.
+* `Enter` starts a timer to let you know how much time you have to solo.
+* `H` brings up the help menu.
 
 [screenshot]: https://raw.githubusercontent.com/mtimkovich/satchmo_practice/master/screenshot.png
