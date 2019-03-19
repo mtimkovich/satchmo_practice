@@ -1,7 +1,7 @@
 extends Node2D
 
-var previous = [0, 0]
 var current = [0, 0]
+
 var top_notes = {
 	1: 'F',
 	2: 'F#',
@@ -22,6 +22,7 @@ var bottom_notes = {
 func play():
 	var pitch = 4
 	var note
+	$Toot.pitch_scale = 1
 	
 	if current[0] != 0:
 		note = top_notes.get(int(current[0]))
@@ -32,42 +33,39 @@ func play():
 		return
 		
 	if $Stick/Up.pressed:
-		print('up')
 		pitch += 1
 	if $Stick/Down.pressed:
-		print('down')
 		pitch -= 1
+
+	# We don't actually have wavs for C3.
+	if 'C' in note and pitch == 3:
+		pitch += 1
+		$Toot.pitch_scale = .5
 		
 	if '#' in note:
 		note = '%s%s#' % [note[0], pitch]
 	else:
 		note = '%s%s' % [note[0], pitch]
-	
+
 	$Toot.stream = load('res://trumpet/%s.wav' % note)
 	$Toot.play()
+	# Cut the toots short.
 	$Toot/Timer.start()
 	
 func _on_Timer_timeout():
 	$Toot.stop()
 
-func _is_pressed():
-	return current != [0, 0]
-
-func _get_fingering():
-	var current = [0, 0]
+func _fingering():
+	current = [0, 0]
 	var n = 0
 	for row in [$Top, $Bottom]:
 		for i in range(row.get_child_count()):
 			if row.get_child(i).pressed:
 				current[n] += pow(2, i)
 		n += 1
-	return current
-	
-func _process(delta):
-	if Input.is_action_just_pressed('leftclick') or Input.is_action_just_pressed('fightstick'):
-		current = _get_fingering()
-		if current != previous and _is_pressed():
-			play()
-		previous = current
-	elif Input.is_action_just_released('leftclick') or Input.is_action_just_released('fightstick'):
-		previous = [0, 0]
+	play()
+
+func _on_Button_pressed():
+	# Buffer inputs for when multiple buttons are pressed.
+	if $InputBuffer.is_stopped():
+		$InputBuffer.start()

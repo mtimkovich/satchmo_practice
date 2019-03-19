@@ -5,15 +5,21 @@ onready var pressed_img = preload('res://button_down.png')
 export (String) var key
 var pressed = false
 
+signal pressed
+
 func scancode():
 	if key == null:
 		return
 	return OS.find_scancode_from_string(key)
 
 func press(is_pressed):
+	if pressed == is_pressed:
+		return
+
 	if is_pressed:
 		$Sprite.texture = pressed_img
 		pressed = true
+		emit_signal('pressed')
 	else:
 		$Sprite.texture = released_img
 		pressed = false
@@ -27,7 +33,4 @@ func _input(event):
 		press(event.is_pressed())
 		
 func _ready():
-	var event = InputEventKey.new()
-	event.scancode = scancode()
-	InputMap.add_action('fightstick')
-	InputMap.action_add_event('fightstick', event)
+	connect('pressed', get_node('/root/Fightstick'), '_on_Button_pressed')

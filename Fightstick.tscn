@@ -50,4 +50,9 @@ key = "L"
 wait_time = 0.2
 one_shot = true
 
+[node name="InputBuffer" type="Timer" parent="."]
+wait_time = 0.05
+one_shot = true
+
 [connection signal="timeout" from="Toot/Timer" to="." method="_on_Timer_timeout"]
+[connection signal="timeout" from="InputBuffer" to="." method="_fingering"]
