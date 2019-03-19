@@ -7,37 +7,42 @@
 script = ExtResource( 1 )
 
 [node name="Stick" type="Node2D" parent="."]
-editor/display_folded = true
 
 [node name="Up" parent="Stick" instance=ExtResource( 2 )]
 position = Vector2( 261.921, 191.992 )
+key = "W"
 
 [node name="Down" parent="Stick" instance=ExtResource( 2 )]
 position = Vector2( 261.921, 365.577 )
+key = "S"
 
 [node name="Top" type="Node2D" parent="."]
-editor/display_folded = true
 
 [node name="LP" parent="Top" instance=ExtResource( 2 )]
 position = Vector2( 546.839, 189.833 )
+key = "U"
 
 [node name="MP" parent="Top" instance=ExtResource( 2 )]
 position = Vector2( 733.197, 147.639 )
+key = "I"
 
 [node name="HP" parent="Top" instance=ExtResource( 2 )]
 position = Vector2( 925.197, 136.639 )
+key = "O"
 
 [node name="Bottom" type="Node2D" parent="."]
-editor/display_folded = true
 
 [node name="LK" parent="Bottom" instance=ExtResource( 2 )]
 position = Vector2( 546.839, 341.833 )
+key = "J"
 
 [node name="MK" parent="Bottom" instance=ExtResource( 2 )]
 position = Vector2( 733.197, 299.639 )
+key = "K"
 
 [node name="HK" parent="Bottom" instance=ExtResource( 2 )]
 position = Vector2( 925.197, 293.639 )
+key = "L"
 
 [node name="Toot" type="AudioStreamPlayer" parent="."]
 

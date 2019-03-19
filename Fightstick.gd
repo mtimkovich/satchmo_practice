@@ -32,8 +32,10 @@ func play():
 		return
 		
 	if $Stick/Up.pressed:
+		print('up')
 		pitch += 1
 	if $Stick/Down.pressed:
+		print('down')
 		pitch -= 1
 		
 	if '#' in note:
@@ -62,10 +64,10 @@ func _get_fingering():
 	return current
 	
 func _process(delta):
-	if Input.is_action_just_pressed('leftclick'):
+	if Input.is_action_just_pressed('leftclick') or Input.is_action_just_pressed('fightstick'):
 		current = _get_fingering()
 		if current != previous and _is_pressed():
 			play()
 		previous = current
-	elif Input.is_action_just_released('leftclick'):
+	elif Input.is_action_just_released('leftclick') or Input.is_action_just_released('fightstick'):
 		previous = [0, 0]
