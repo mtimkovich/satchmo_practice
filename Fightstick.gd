@@ -20,7 +20,6 @@ var bottom_notes = {
 }
 
 func _ready():
-	$Help.visible = false
 	if OS.has_touchscreen_ui_hint():
 		$HelpText.visible = false
 	
