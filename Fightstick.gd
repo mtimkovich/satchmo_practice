@@ -34,9 +34,9 @@ func play():
 	$Toot.pitch_scale = 1
 	
 	if current[0] != 0:
-		note = top_notes.get(int(current[0]))
+		note = top_notes.get(current[0])
 	elif current[1] != 0:
-		note = bottom_notes.get(int(current[1]))
+		note = bottom_notes.get(current[1])
 		
 	if note == null:
 		return
@@ -70,7 +70,7 @@ func _fingering():
 	for row in [$Top, $Bottom]:
 		for i in range(row.get_child_count()):
 			if row.get_child(i).pressed:
-				current[n] += pow(2, i)
+				current[n] += int(pow(2, i))
 		n += 1
 	play()
 
